@@ -1,0 +1,25 @@
+<html>
+<head>
+	<script type="text/javascript">
+		function ReadSpan(){
+			var cc=document.getElementById("myspan"). innerHTML;
+			alert(cc);
+		}
+		function writeSpan(){
+			var pp=document.getElementById("next");
+			pp.textContent="changed";
+		}
+	</script>
+</head>
+<body>
+	<p>paragraph <span id="myspan"> This is span</span><br>
+		<button onclick="ReadSpan()">Read span</button>
+		<br/><br/>
+		<button onclick="writeSpan()">write to span</button><br>
+		<span id="next">
+			The second span
+		</span>
+	</p>
+</body>
+</html>
+
